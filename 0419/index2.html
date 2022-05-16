@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html4 버전 마크업</title>
+    <style>
+
+        body{
+            background-color: dimgray;
+            font-family: 나눔바른고딕;
+        }
+
+        #header{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        ul{
+            padding: 0px;
+        }
+
+        ul li{
+            display: inline-block;
+            list-style: none;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #666;
+        }
+
+        #content{
+            margin: 5px;
+            padding: 5px;
+            background-color: darksalmon;
+        }
+
+        .article{
+            margin: 5px;
+            padding: 5px;
+            background-color: gold;
+        }
+
+        #nav{
+            margin: 5px;
+            padding: 5px;
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <h2 class="text01">카카오</h2>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="#">카카오톡</a></li>
+            <li><a href="#">카카오스토리</a></li>
+            <li><a href="#">카카오프렌즈</a></li>
+            <li><a href="#">카카오쇼핑</a></li>
+        </ul>
+    </div>
+
+    <div id="content">                                           <!--콘텐츠 시작-->
+        <h2>카카오서비스</h2>
+        <div class="article">
+            <h3>카카오톡</h3>
+            <p>사람과 세상, 그 이상을 연결하는 카카오톡</p>
+        </div>
+
+        <div class="article">
+            <h3>카카오스토리</h3>
+            <p>소소한 일상 속 소소한 이야기, 카카오스토리</p>
+        </div>
+
+        <div class="article">
+            <h3>카카오프렌즈</h3>
+            <p>일상 속 즐거움, 카카오프렌즈</p>
+        </div>
+
+        <div class="article">
+            <h3>카카오쇼핑</h3>
+            <p>빠르고, 건강하게 먹는 즐거움, 카카오쇼핑</p>
+        </div>
+
+    </div>                                                       <!--콘텐츠 끝-->
+
+    <div id="footer">
+        <p>Copyright &copy; kakao Corp. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
