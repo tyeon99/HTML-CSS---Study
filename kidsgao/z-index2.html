@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+
+        .container{
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .black-box{
+            width: 1200px;
+            height: 200px;
+            background-color: black;
+            position: relative;
+            z-index: 1;
+        }
+
+        .yellow-box{
+            width: 800px;
+            height: 150px;
+            background-color: yellow;
+            position: absolute;
+            z-index: 3;
+            left: 400px;
+            top : 0px;
+        }
+
+        .red-box{
+            width: 400px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            z-index: 2;
+            left: 10px;
+            top : 130px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>z-index 테스트</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum a sequi dicta id vitae! Nostrum dolorem, ab, fugiat laborum animi vel id at autem facere quisquam praesentium, molestias necessitatibus assumenda?</p>
+
+    <div class="container">
+        <div class="black-box">검정박스의 z-index는 : 1</div>
+        <div class="yellow-box">노랑박스의 z-index는 : 3</div>
+        <div class="red-box">빨강박스의 z-index는 : 2</div>
+    </div>
+
+</body>
+</html>

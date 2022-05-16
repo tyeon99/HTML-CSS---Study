@@ -1,0 +1,461 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* 인트로 시작 */
+.intro{
+    width: 100%;
+    height: 1600px;
+    background-image: url("/img/intro/intro_bg.png");
+}
+
+.introWrap{
+    position : relative;
+    margin : 0 auto;
+    width: 760px;
+    height: 516px;
+    /* background-color: aqua; */
+}
+
+.logo{
+    position : absolute;
+    width: 760px;
+    height: 516px;
+    background-image: url("/img/intro/logo.png");
+    left : 0px;
+    top : 100px;
+    z-index: 100;
+}
+
+.lion{
+    position : absolute;
+    width: 161px;
+    height: 161px;
+    background-image: url("/img/intro/lion.png");
+    left : 30px;
+    top : 180px;
+    z-index: 90;
+
+    animation-name : lion;
+    animation-duration : 2s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes lion{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+.rabbit{
+    position : absolute;
+    width: 105px;
+    height: 129px;
+    background-image: url("/img/intro/rabbit.png");
+    left : 575px;
+    top : 190px;
+    z-index: 90;
+
+    animation-name : rabbit;
+    animation-duration : 1s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rabbit{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+.bear{
+    position : absolute;
+    width: 112px;
+    height: 105px;
+    background-image: url("/img/intro/bear.png");
+    left : 560px;
+    top : 400px;
+    z-index: 200;
+
+    animation-name : bear;
+    animation-duration : 1s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bear{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.monkey{
+    position : absolute;
+    width: 85px;
+    height: 93px;
+    background-image: url("/img/intro/monkey.png");
+    left : 50px;
+    top : 400px;
+    z-index: 200;
+
+    animation-name : monkey;
+    animation-duration : 0.5s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes monkey{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+.cloudWrap{
+    position : relative;
+    margin : 0 auto;
+    width: 100%;
+    height: 1050px;
+}
+
+.leftCloud{
+    position : absolute;
+    width: 934px;
+    height: 816px;
+    background-image: url("/img/intro/cloud1.png");
+    left : 0px;
+    top : 0px;
+}
+
+.rightCloud{
+    position : absolute;
+    width: 843px;
+    height: 858px;
+    background-image: url("/img/intro/cloud2.png");
+    right : 0px;
+    top : 0px;
+}
+
+.dragonfly{
+    position : absolute;
+    width: 366px;
+    height: 228px;
+    background-image: url("/img/intro/dragonfly.png");
+    /* left : 0px;
+    top : 858px; */
+
+    animation-name : dragonfly;
+    animation-duration : 4s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+}
+
+@keyframes dragonfly{
+    0%{
+        left : 0px;
+        top : 858px;
+    }
+    25% { left : 25%; top : 858px;}
+    50% { left : 50%; top : 858px;}
+    75% { left : 75%; top : 858px;}
+    100%{
+        left : 100%;
+        top : 858px;
+    }
+}
+
+/* 인트로 끝 */
+
+/* farm1 시작 */
+.farm1{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url("/img/farm/farm1/farm1_bg.png");
+
+}
+
+.leftRice1{
+    position : absolute;
+    width: 390px;
+    height: 670px;
+    background-image: url("/img/farm/farm1/leftrice.png");
+    left : 0px;
+    top : 0px;
+}
+
+.farmer{
+    position : absolute;
+    width: 747px;
+    height: 1078px;
+    background-image: url("/img/farm/farm1/farmer.png");
+    left : 50%;
+    margin-left : -310px;
+}
+
+.rightRice1{    
+    position : absolute;
+    width: 335px;
+    height: 570px;
+    background-image: url("/img/farm/farm1/rightrice.png");
+    right : 0px;
+    margin-top : 100px;
+}
+
+
+.farmSpeechWrap{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* background-color: aqua; */
+    left : 150px;
+    top : 250px;
+}
+
+.farmspeech{
+    position : absolute;
+    color: rgb(144, 94, 29);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* farm1 끝 */
+
+/* farm2 시작 */
+.farm2{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-image: url("/img/farm/farm2/farm2_bg.png");
+
+}
+
+.leftRice2{
+    position : absolute;
+    width: 250px;
+    height: 850px;
+    background-image: url("/img/farm/farm2/leftrice2.png");
+    left : 0px;
+    top : 0px;
+}
+
+.scarecrow{
+    position : absolute;
+    width: 103px;
+    height: 206px;
+    background-image: url("/img/farm/farm2/scarecrow.png");
+    left: 300px;
+    top : 200px;
+
+}
+
+.rightRice2{    
+    position : absolute;
+    width: 236px;
+    height: 850px;
+    background-image: url("/img/farm/farm2/rightrice2.png");
+    right : 0px;
+}
+/* farm2 끝 */
+
+/* farm3 시작 */
+.farm3{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-image: url("/img/farm/farm3/farm3_bg.png");
+
+}
+
+.window{
+    position : absolute;
+    width: 247px;
+    height: 169px;
+    background-image: url("/img/farm/farm3/window.png");
+    left: 100px;
+    top : 100px;
+}
+
+.machine{
+    position : absolute;
+    width: 600px;
+    height: 455px;
+}
+
+.machine1{
+    position : absolute;
+    width: 586px;
+    height: 455px;
+    background-image: url("/img/farm/farm3/machine1.png");
+    left: 650px; 
+    top : 150px;
+    z-index: 1;
+}
+
+.sawshadow{
+    position : absolute;
+    width: 95px;
+    height: 95px;
+    background-image: url("/img/farm/farm3/sawshadow.png");
+    left: 810px;
+    top : 290px;
+}
+
+.saw1{
+    position : absolute;
+    width: 95px;
+    height: 95px;
+    background-image: url("/img/farm/farm3/saw.png");
+    left: 800px;
+    top : 290px;
+    z-index: 0;
+
+    animation-name : saw1;
+    animation-duration : 8s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+}
+
+@keyframes saw1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.saw2{
+    position : absolute;
+    width: 95px;
+    height: 95px;
+    background-image: url("/img/farm/farm3/saw.png");
+    left: 1000px;
+    top : 290px;
+    z-index: 0;
+
+    animation-name : saw2;
+    animation-duration : 8s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+}
+
+@keyframes saw2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.machinerbird{
+    position : absolute;
+    width: 44px;
+    height: 49px;
+    background-image: url("/img/farm/farm3/machinebird.png");
+    left: 670px;
+    top : 370px;
+}
+
+.second{
+    position : absolute;
+    width: 103px;
+    height: 103px;
+    background-image: url("/img/farm/farm3/second.png");
+    left: 695px;
+    top : 275px;
+    z-index: 2;
+
+    animation-name : second;
+    animation-duration : 8s;
+    animation-iteration-count : infinite;
+    animation-timing-function : linear;
+}
+
+@keyframes second{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.farm3bubble{
+    position : absolute;
+    width: 333px;
+    height: 201px;
+    left: 1490px;
+    top : 350px;
+}
+/* farm3 끝 */
+
+/* forest1 시작 */
+.forest1{
+    position : relative;
+    width: 100%;
+    height: 1050px;
+    background-image: url("/img/forest/forest1/forest1_bg.png");
+}
+
+.lefttree{
+    position : absolute;
+    width: 332px;
+    height: 990px;
+    background-image: url("/img/forest/forest1/lefttree.png");
+    left: 0px;
+    top : 0px;
+}
+
+.right{
+    position : absolute;
+    width: 103px;
+    height: 103px;
+    left: 695px;
+    top : 275px;
+}
+
+.rabbit1{
+    position : absolute;
+    width: 82px;
+    height: 103px;
+    background-image: url("/img/forest/forest1/rabbit1.png");
+    left: 1018px;
+    top : 265px;
+}
+
+.rabbit2{
+    position : absolute;
+    width: 56px;
+    height: 75px;
+    background-image: url("/img/forest/forest1/rabbit2.png");
+    left: 695px;
+    top : 280px;
+}
+
+.righttree{
+    position : absolute;
+    width: 304px;
+    height: 572px;
+    background-image: url("/img/forest/forest1/righttree.png");
+    left: 910px;
+    top : -170px;
+}
