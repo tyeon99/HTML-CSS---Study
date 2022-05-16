@@ -1,0 +1,36 @@
+body{
+    animation: bgimg 10s infinite normal;
+}
+
+@keyframes bgimg{
+    0% { background-image: url(/img/mountain-994224_1920.jpg); }
+    20% { background-image: url(/img/milky-way-2155046_1920.jpg); }
+    40% { background-image: url(/img/sky.jpg); }
+    60% { background-image: url(/img/beach-1852945_1920.jpg); }
+    80% { background-image: url(/img/sky.jpg); }
+}
+
+.login{
+    animation: login 10s infinite normal;
+}
+
+@keyframes login{
+    0% { color: red; }
+    20% { color: green; }
+    40% { color: yellow; }
+    60% { color: grey; }
+    80% { color: pink; }
+}
+
+input[type="text"], input[type="password"]{
+    animation: login_input 10s infinite normal;
+}
+
+@keyframes login_input{
+    0% { color: red; }
+    20% { color: green; }
+    40% { color: yellow; }
+    60% { color: grey; }
+    80% { color: pink; }
+}
+

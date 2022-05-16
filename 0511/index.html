@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    
+
+    <form action="001" method="">
+
+        <lable for="fname">성( First Name )</lable>
+        <input type="text" id="fname" name="fname"> <br/>
+
+        <lable for="lname">이름 ( Last Nmae )</lable>
+        <input type="text" id="lname" name="lname"> <br/>
+
+        <input type="submit" value="전송"> <br/>
+
+    </form>
+
+    <form action="002" method="">
+
+        <label for="">당신이 좋아하는 과일은 ?</label>
+        <select id="" name="" size="5" multiple>
+            <option value="apple">사과</option>
+            <option>배</option>
+            <option selected>딸기</option>
+            <option>자몽</option>
+            <option>오렌지</option>
+        </select>
+
+        <input type="submit" value="제출">
+
+    </form>
+
+    <form action="003" method="get">
+
+        <textarea name="" id="" cols="10" rows="10">
+            이곳에 원하는 글자를 입력하세용 !
+        </textarea>
+
+    </form>
+    <hr>
+    <h2>데이터리스트 요소</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi hic consectetur, et alias, ab soluta vero omnis tenetur vitae iste, autem laudantium. Sapiente, vel tempore quos corrupti asperiores facilis?</p>
+
+    <!-- <form action="004" method="">  -->
+
+        <fieldset>
+            <input list="human" name="human">
+            <datalist id="human">
+                <option value="남자"></option>
+                <option value="여자"></option>
+
+                <option value="어린이"></option>
+                <option value="노약자"></option>
+            </datalist>
+        </fieldset>
+
+    <!-- </form> -->
+
+</body>
+</html>

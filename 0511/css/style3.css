@@ -1,0 +1,221 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.wrap{
+    padding: 0;
+    margin: 70px auto;
+    width: 1000px;
+    height: 800px;
+    background-color: grey;
+    position: relative;
+}
+
+.box1{
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    width: 450px;
+    height: 700px;
+    background-color: yellow;
+    left: 30px;
+    top: 50px;
+}
+
+.logo{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    /* background-image: url(/img/loro.jpg); */
+    background-size: contain;
+    left: 140px;
+    top: 50px;
+}
+.login{
+    position: absolute;
+    left: 70px;
+    top: 300px;
+    text-align: left;
+}
+
+input[type="text"], input[type="password"]{
+    padding: 0;
+    margin: 1px;
+    width: 300px;
+    height: 30px;
+}
+
+input[type="button"]{
+    padding: 0;
+    width: 305px;
+    height: 30px;
+    background-color: rgb(46, 8, 8);
+    color: white;
+    border-style: none;
+}
+
+.text1{
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+    top: 250px;
+    font-size: 18px;
+    text-align: center;
+}
+
+p{
+    font-size: 12px;
+}
+
+a{
+    font-size: 12px;
+}
+
+.text2{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.box2{
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    width: 450px;
+    height: 700px;
+    background-color: yellow;
+    left: 520px;
+    top: 50px;
+    z-index: 0;
+}
+
+.box2-1{
+    width: 450px;
+    height: 200px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.box2-1-1{
+    position: absolute;
+    padding: 0;
+    margin: 35px 30px 30px 10px;
+    width: 200px;
+    height: 300px;
+    /* line-height: 25px; */
+    /* background-color: red; */
+    left: 50px;
+}
+
+.text3{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.text4{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.icon1{
+    /* background-image: url(/img/muzi.png); */
+    position: absolute;
+    width: 150px;
+    height: 160px;
+    background-size: contain;
+    z-index: 2;
+    left: 280px;
+    top: 5px;
+}
+
+.box2-2{
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    z-index: 3;
+}
+
+.icon2{
+    position: absolute;
+    /* background-image: url(/img/b1.jpg); */
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 70px;
+}
+
+.box2-2-1{
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 250px;
+    height: 180px;
+    /* background-color: red; */
+    left: 180px;
+    top: 60px;
+}
+
+p{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.box2-2-1-1{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.text5{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.icon3{
+    position: absolute;
+    background-image: url(/img/b2.jpg);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+    top: 300px;
+}
+
+.box2-2-2{
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    width: 250px;
+    height: 180px;
+    /* background-color: red; */
+    left: 180px;
+    top: 290px;
+}
+
+.box2-2-2-1{
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.text6{
+    margin: 10px;
+    font-weight: bold;
+}
+
