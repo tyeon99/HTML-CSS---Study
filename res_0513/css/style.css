@@ -1,0 +1,36 @@
+.header{
+
+}
+
+.left{
+    width: 20%;
+    height: 200px;
+    background-color: antiquewhite;
+    float: left;
+}
+
+.main{
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    float: left;
+}
+
+.right{
+    width: 20%;
+    height: 200px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.header{
+    
+}
+
+@media(max-width: 800px){
+    .left, .main, .right{
+        /* display: block; */
+        /* clear: both; */
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 기초</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+        body{
+            font-size: 50px;
+        }
+
+        h2{
+            font-size: 0.8em;
+        }
+
+        p{
+            font-size: 0.5em;
+        }
+
+        .img01{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2>Responsive Image</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sint pariatur maiores neque, iure facere accusantium, 
+        cum at ratione aut eaque animi ad blanditiis nemo sed, 
+        non enim placeat accusamus sequi?</p>
+      
+    <picture>
+        <source srcset="img/img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="img/img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="img/flowers.jpg">
+
+
+        <img src="./img/flowers.jpg" alt="flower">
+
+    </picture>   
+
+</body>
+</html>

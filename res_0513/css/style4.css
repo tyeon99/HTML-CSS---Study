@@ -1,0 +1,80 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.header{
+    color: white;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    padding: 40px;
+}
+
+.section{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.menu{
+    padding: 10px;
+    width: 20%;
+    background-color: black;
+    text-align: center;
+    float: left;
+}
+
+.menu a{
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.main{
+    width: 60%;
+    padding: 86px;
+    margin: 0;
+    background-color: white;
+    float: left;
+}
+
+.main p{
+    font-size: 20px;
+}
+
+.topic{
+    width: 20%;
+    padding: 68px;
+    margin: 0;
+    background-color: red;
+    float: left;
+    text-align: center;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: gray;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .menu, .main, .topic{
+        width: 100%;        
+    }
+}
