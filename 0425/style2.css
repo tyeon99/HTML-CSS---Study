@@ -1,0 +1,33 @@
+.parents01{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: darksalmon;
+}
+
+.parents02{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: darksalmon;
+    /* display: inline-block; */
+    float: left;
+}
+
+.children{
+    width: 200px;
+    height: 200px;
+    background: red;
+} 
+
+.children.a{
+}
+
+.children.b{
+    text-align: center;
+    line-height: 200px;
+    background-color: violet;
+    color: aliceblue;
+    font-size: 30px;
+    margin: 200px auto;
+}
