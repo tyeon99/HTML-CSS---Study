@@ -1,0 +1,32 @@
+body{
+    padding: 20px;
+}
+
+.title{
+    padding: 20px;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    font-family: impact;
+    color : gold;
+}
+
+.contents{   
+    padding: 20px;
+    text-align: center;
+}
+
+.frame{
+    /* background-color: aqua; */
+    border: 2px solid red;
+    width : 1000px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+    width: 800px;
+    height: 400px;
+}
