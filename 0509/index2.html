@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            /* width: 100px;
+            height: 100px;  */
+            position: relative;
+            /* background-color: red; */
+            animation-name: changebox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #box1{
+            width: 161px;
+            height: 161px;
+            background-image: url("/img/lion.png");
+            animation-timing-function: linear;
+        }
+
+        #box2{
+            width: 112px;
+            height: 105px;
+            background-image: url("/img/bear.png");
+            animation-timing-function: ease;
+        }
+
+        #box3{
+            width: 366px;
+            height: 228px;
+            background-image: url("/img/dragonfly.png");
+            animation-timing-function: ease-in;
+        }
+
+        #box4{
+            width: 85px;
+            height: 93px;
+            background-image: url("/img/monkey.png");
+            animation-timing-function: ease-in-out;
+        }
+
+        #box5{
+            width: 105px;
+            height: 129px;
+            background-image: url("/img/rabbit.png");
+            animation-timing-function: ease-out;
+        }
+        
+        @keyframes changebox{
+            0% { 
+                /* background-color: red;  */
+                left: 0px;
+                top: 0px;
+            }
+/* 
+            25% { 
+                background-color: orange; 
+                left: 100px;
+                top: 0px;
+            }
+
+            50% { 
+                background-color: yellow; 
+                left: 100px;
+                top: 100px;
+            }
+
+            75% { 
+                background-color: green; 
+                left: 0px;
+                top: 100px;
+            } */
+
+            100% { 
+                /* background-color: blue;  */
+                left: 600px;
+                top: 0px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>CSS Animation</h2>
+    <!-- <div></div> -->
+    <p>빨강색에서 노란색으로 변하다가 다시 빨강으로 돌아옵니다.</p>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+
+</body>
+</html>
