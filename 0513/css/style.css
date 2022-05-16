@@ -1,0 +1,66 @@
+*, html{
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    position: relative;
+    margin: 40px auto;
+    width: 1300px;
+    height: 800px;
+    /* background-color: lightblue; */
+}
+
+.logo{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    background-size: contain;
+    background-image: url("/img/logo.jpg");
+    left: 20px;
+}
+
+.line{
+    position: absolute;
+    width: 1300px;
+    height: 3px;
+    background-color: blue;
+    top: 100px;
+}
+
+.text1{
+    position: absolute;
+    font-size: 20px;
+    left: 25px;
+    top: 110px;
+}
+
+.text2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    left: 25px;
+    top: 160px;
+}
+
+.box1{
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    /* background-color: aquamarine; */
+    left: 60px;
+    top: 200px;
+}
+
+.radiobox{
+    
+}
+
+.box2{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    left: 740px;
+    top: 200px;
+}
