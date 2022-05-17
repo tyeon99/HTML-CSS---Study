@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+}
+
+.box{
+    background: white;
+    /* height: 100px;
+    overflow: hidden;  ex ) scroll, auto */
+    overflow: hidden; /* 높이를 살려줌 */
+}
+
+.box p{
+    border: 10px solid red;
+    margin-left: 200px
+}
+
+.left{
+    float: left;
+}
+
+/* .box p{
+    border: 5px solid red;
+} */
+
+.right{
+    float: right;  /* float를 주면 높이 값이 사라진다 */
+}
