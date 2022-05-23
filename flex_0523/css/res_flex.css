@@ -1,0 +1,31 @@
+.container{
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+}
+
+
+.box{
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 200px;
+    flex: 50%;
+}
+
+.box.left{
+    background-color: aquamarine;
+}
+
+.box.right{
+    background-color: beige;
+}
+
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+

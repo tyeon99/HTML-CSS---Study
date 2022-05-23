@@ -1,0 +1,15 @@
+.emmet{
+
+    /* m10 */
+    margin: 10px;
+
+    /* m50p */
+    margin: 50%;
+
+    /* m2e */
+    margin: 2em;
+
+    /* m10p30e5 */
+    margin: 10% 30em 5px;
+
+}

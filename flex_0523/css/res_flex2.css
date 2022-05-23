@@ -1,0 +1,50 @@
+*,
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(46, 173, 232);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    padding: 20px;
+
+    font-size: 24px;
+    text-align: center;
+    line-height: 200px;
+
+    flex: 25%;
+    max-width: 100%;
+
+}
+
+.box.box1 {
+    background-color: #888;
+
+}
+
+.box.box2 {
+
+    background-color: rgb(141, 121, 199);
+}
+
+.box.box3 {
+
+    background-color: rgb(88, 226, 118);
+}
+
+.box.box4 {
+
+    background-color: rgb(219, 90, 131);
+}
+
+@media (max-width:800px) {
+    .container {
+        flex-direction: column;
+    }
+}

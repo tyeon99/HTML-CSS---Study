@@ -1,0 +1,32 @@
+.container{
+    background-color: darksalmon;
+    /* overflow: hidden;    float: left; 일 때 넣어야 함 */
+    display: flex;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    /* display: inline-block; */
+    /* float: left;         부모에 overflow: hedden; */
+
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.box.box1{
+    background-color: aquamarine;
+}
+
+.box.box2{
+    background-color: beige;
+}
+
+.box.box3{
+    background-color: cadetblue;
+}
+
