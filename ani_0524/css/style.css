@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+.loader{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    border-top: 50px solid darkgray;
+    border-right: 50px solid darkcyan;
+    border-bottom: 50px solid darkgreen;
+    border-left: 50px solid darkorchid;
+    border-radius: 50%;
+
+    margin: 300px auto;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}

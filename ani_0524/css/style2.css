@@ -1,0 +1,50 @@
+.preLoader{
+    margin: 200px auto;
+    width: 500px;
+    height: 500px;
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball1, .ball2, .ball3{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.ball1{
+    background-color: red;
+    animation: bounce 1s ease-in-out 0s infinite;
+}
+
+.ball2{
+    background-color: yellow;
+    animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+.ball3{
+    background-color: green;
+    animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+/* @keyframes bounce{
+    0%, 50%, 75%, 100%{
+        transform: translateY(0px);
+    }
+
+    25%{
+        transform: translateY(-25px);
+    }
+} */
+
+@keyframes bounce{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
