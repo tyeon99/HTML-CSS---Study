@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드</title>
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+
+<body>
+    <!-- 배너 또는 팝업   -->
+    <div class="top">
+        <h4> 이부분은 배너 또는 팝업이 나타나는 곳입니다.</h4>
+    </div>
+    <!-- 메뉴부분 -->
+    <div class="navbar">
+        <a href="#">Naver</a>
+        <a href="#">Daum</a>
+        <a href="#">Google</a>
+        <a href="#">Youtube</a>
+        <a href="#">Netflex</a>
+    </div>
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	
+	<!-- End WOWSlider.com BODY section -->
+
+    <!-- 슬라이드 또는 대표이미지 -->
+    <div class="header">
+        
+    </div>
+
+
+
+    <!-- 중간 컨텐츠부분 -->
+    <div class="row">
+        <!-- 왼쪽부분 -->
+        <div class="side">
+            <h2>About</h2>
+            <h4>Photo of me</h4>
+
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad cum deleniti saepe vel quos impedit eos,
+                eligendi qui hic perferendis totam earum fugit nesciunt animi, atque dicta! Sunt, dicta ipsum?</p>
+
+            <h3>More Text</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur</p>
+
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+        <!-- 가운데부분 -->
+        <div class="main">
+            <h2>TiTle Heading01</h2>
+            <h4>Title Description SUN, May 15, 2022</h4>
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+            <p>Some Text01...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, non fugiat laborum, similique
+                illo consequatur nam illum commodi, id ratione minima! Nulla facere nobis dolores porro, odio cum
+                quisquam.</p>
+            <br />
+
+            <h2>TiTle Heading02</h2>
+            <h4>Title Description SUN, May 15, 2022</h4>
+            <div class="fakeimg">
+                <img src="" alt="">
+            </div>
+            <p>Some Text02...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate, non fugiat laborum, similique
+                illo consequatur nam illum commodi, id ratione minima! Nulla facere nobis dolores porro, odio cum
+                quisquam.</p>
+        </div>
+
+    </div>
+    <!-- 하단 주소 및 저작권 -->
+    <div class="footer">
+        <h2>Footer</h2>
+        <p class="footer-txt">Copy Right Reserved by SBSART | 1588-1588</p>
+
+    </div>
+
+
+</body>
+
+</html>

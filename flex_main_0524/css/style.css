@@ -1,0 +1,104 @@
+*, html{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 16px;
+}
+
+body{
+    margin: 0; padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 40px 0px 0px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1em;
+}
+
+p{
+    font-style: italic;
+    text-align: justify;
+    padding: 0px 10px;
+}
+
+.top{
+    background-color: yellow;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header{
+    /* background-color: aquamarine; */
+    padding: 0;
+    text-align: center;
+}
+
+.header-txt{
+    text-align: center;
+}
+
+.navbar{
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side{
+    flex: 30%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.main{
+    flex: 70%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.fakeimg{
+    background-color: lightgray;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer{
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.footer-txt{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+    a{
+        margin: 0;
+    }
+}
