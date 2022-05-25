@@ -1,0 +1,144 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    color: black;
+}
+
+/* *********START**************** */
+body {
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    text-align: center;
+}
+
+#container {
+    margin: 350px auto;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 4px rgba(112, 0, 163);
+    transition: 0.2s ease-out;
+}
+
+#container:hover {
+    box-shadow: 0px 5px 20px 0px rgb(174, 0, 255);
+}
+
+#container .image-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+#container .image-box .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#container:hover .image-box {
+    transform: translateY(-100px);
+}
+
+#container:hover .image-box .img{ opacity: 0.7;}
+
+#container .sns{
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+ul li{
+    margin: 30px 10px;
+}
+
+ul li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    transform: translateY(200px);
+    opacity: 0;      /* display: none */
+
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#container:hover > ul > li > a{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#container:hover > ul > li:nth-child(2) a{
+    transition-delay: 0.1s;
+}
+
+#container:hover > ul > li:nth-child(3) a{
+    transition-delay: 0.2s;
+}
+
+#container:hover > ul > li:nth-child(4) a{
+    transition-delay: 0.3s;
+}
+
+#container:hover > ul > li:nth-child(5) a{
+    transition-delay: 0.4s;
+}
+
+#container .contents{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: black;
+    bottom: 20px;
+}
+
+.info h2{
+    font-weight: 1000;
+    font-size: 26px;
+    margin: 3px 0px;
+}
+
+.info span{
+    color: darkmagenta;
+}

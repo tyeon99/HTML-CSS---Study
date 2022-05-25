@@ -1,0 +1,34 @@
+*, html{
+    padding: 0; margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.processbar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 30px;
+    border: 10px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 5px rgb(68, 42, 88);
+    overflow: hidden;
+}
+
+.process{
+    width: 300px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 50px;
+
+    animation: load 4s linear infinite;
+}
+
+@keyframes load{
+    0%{ margin-left: -300px }
+    100%{margin-left: 300px }
+}
