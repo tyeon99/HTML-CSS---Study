@@ -1,0 +1,21 @@
+.box{
+    width: 1000px;
+    height: 800px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+video{
+    width: 800px;
+    height: 600px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
