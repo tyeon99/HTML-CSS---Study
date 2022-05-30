@@ -1,0 +1,38 @@
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: darksalmon;
+}
+
+a:hover{
+    color: mediumpurple;
+}
+
+a:active{
+    color: red;
+}
+
+.box{
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.box:hover{
+    background-color: blue;
+}
+
+h3{
+    display: none;
+}
+
+
+
+.hide:hover h3{
+    display: block;
+    padding: 10px;
+    background-color: aqua;
+}

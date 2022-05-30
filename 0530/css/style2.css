@@ -1,0 +1,19 @@
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: blue;
+}
+
+p:first-child i{
+    color: pink;
+}
+
+h1:before{ 
+    content:'🚗';
+}
+
+h2:after{
+    content: '🌏';
+}
