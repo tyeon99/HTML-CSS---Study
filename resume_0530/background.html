@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+h1{
+background-color: aqua;
+}
+
+
+div{
+background-color: brown;
+}
+
+
+p{
+background-color: darkcyan;
+}
+
+span{
+  background-color: darkorange;
+}
+/* ******Transparent Box(RGBA)************ */
+.tbox{
+  background-color: rgb(183, 94, 62);
+}
+
+.tbox:nth-child(1){
+  opacity: 0.1;
+}
+
+.tbox:nth-child(2){
+  opacity: 0.3;
+}
+
+.tbox:nth-child(3){
+  opacity: 0.7;
+}
+
+.tbox:nth-child(4){
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+  <h1>css background</h1>
+  <div>
+    Lorem ipsum dolor sit amet, 
+    consectetur adipisicing elit. 
+    <p>Eligendi repudiandae fugiat consequatur esse omnis corrupti quo, </p>
+    adipisci ut provident sit architecto tempora earum numquam blanditiis, 
+    in modi nobis expedita debitis?
+  </div>
+
+  <span>
+    블록방식과 인라인 방식의 차이점?
+    
+  </span>
+<!-- ***********Transparent Box(RGBA)************** -->
+<hr>
+
+<h1>Transparent Box(RGBA)</h1>
+
+<div class="tbox box1">
+  <h1>Opacity 10%</h1>
+</div>
+
+<div class="tbox box2">
+  <h1>Opacity 30%</h1>
+</div>
+
+<div class="tbox box3">
+  <h1>Opacity 70%</h1>
+</div>
+
+<div class="tbox box4">
+  <h1>Opacity 100%</h1>
+</div>
+
+
+
+
+
+
+</body>
+</html>

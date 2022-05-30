@@ -1,0 +1,232 @@
+*, html{  margin: 0;padding: 0;  box-sizing: border-box;}
+a{text-decoration: none; color:inherit}
+ul{list-style: none;}
+/* 초기화 끝 */
+
+/* MEDIA qUERY  768PX 이상이될 경우*/
+@media (min-width:768px){
+
+  #portrait{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60vw;
+    height: 100vh;
+  }
+
+  #profile{ margin-left: 60vw; }
+}
+
+.name{
+  font-size: 4vw;
+}
+
+.timeline li{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color:#999;
+  font-family: 나눔바른고딕;
+}
+
+
+#portrait{
+  background-image: url(../images/main_img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 56.25%;
+}
+
+#profile{
+  padding: 2%;
+}
+
+.profile-header, .profile-section{
+  padding-bottom: 5%;
+}
+
+.name {
+  font-size: 3em;   line-height: 1.8;  font-style: italic;   margin-bottom: 20px;  font-family:fantasy;
+  position: sticky;   top: -2em;
+  background-color: #111;
+  box-shadow: 0 0 50px 10px #111;
+}
+
+.name-job {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 1.7em;
+  vertical-align: top;
+  color: white;
+  padding: 0em 0.5em 1em 0.4em;
+  /* background-color: rgb(192, 198, 149); */
+}
+.name-job:after {
+content:'';
+position: absolute;
+top: 0;right: 0;bottom: 0;left: 0;
+margin: 0.3em 0 0 0;
+box-shadow: inset 0 0 10px 10px mediumpurple;
+/* color: yellow;
+text-shadow: 2px 3px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+.name-job-list{
+  animation: rolling 10s infinite reverse;
+}
+
+@keyframes rolling{
+
+  0%{transform: translateY(0);}
+  25%{transform: translateY(-20%);}
+  50%{transform: translateY(-40%);}
+  75%{transform: translateY(-60%);}
+  100%{transform: translateY(-80%);}
+
+}
+
+.name-title{
+font-size: 1em;
+color: mediumpurple;
+line-height: 2;
+margin-left: 0.1em;
+position: relative;
+}
+
+
+.intro{
+font-size: 1em;
+color: white;
+/* font-family: 나눔바른고딕; */
+line-height: 1.2;
+text-align: justify;
+margin-bottom: 1em;
+}
+
+.slogon{
+  font-size: 1.1em;
+  color: white;
+  /* font-family: 나눔바른고딕; */
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+.icons{
+  margin: 20px 0;
+}
+
+.icons a{
+  background-image: url(../images/icons.png);
+width: 30px;
+height: 30px;
+display: inline-block;
+text-indent: -9999px;
+}
+
+.icons a.facebook{
+  background-position: left top;
+}
+
+.icons a.youtube{
+  background-position: center top;
+}
+
+.icons a.twitter{
+  background-position: right top;
+}
+
+.icons a:hover{
+  background-position-y: bottom;
+}
+
+/* section2 timeline */
+
+.profile-section h2{
+  border-top: 1px solid mediumorchid;
+  padding: 0.5em 0;
+  margin-bottom: 0.3em;
+}
+
+.timeline{
+  font-size: 1rem;
+  color: #999;
+}
+
+.timeline li{
+  padding-bottom: 2em;
+}
+
+.timeline li:last-child{
+  padding-bottom: 0em;
+}
+
+.timeline li h3{
+  color: mediumpurple;
+  border-top: 4px solid mediumpurple;
+  padding: 0.2em 0.2em 0 0.2em;
+  margin-right: 0.2em;
+  float: left;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+.timeline li p{
+  text-align: justify;
+}
+
+/* section3 Graph */
+
+.grap li{
+  color:rgb(89, 0, 141);
+  font-size: 20px;
+  padding: 10px;
+  margin: 0.5em;
+  border-radius: 20px;
+  background: mediumpurple;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, mediumpurple, mediumorchid);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, mediumpurple, mediumorchid); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grap li:before{
+  content: '✔ ';
+}
+
+.grap li:after{
+  content: attr(data-score);
+  float: right;
+}
+
+.grap li[data-score="90%"]{ width: 90%; }
+.grap li[data-score="70%"]{ width: 70%; }
+.grap li[data-score="60%"]{ width: 60%; }
+.grap li[data-score="60%"]{ width: 60%; }
+.grap li[data-score="100%"]{ width: 100%; }
+.grap li[data-score="80%"]{ width: 80%; }
+.grap li[data-score="100%"]{ width: 100%; }
+
+/* sectiong3 Contact */
+
+.list{
+  color: white;
+  font-size: 1.2em;
+}
+
+.list dt{
+  width: 8em;
+  padding: 0 10px 0 0;
+  color: mediumpurple;
+  float: left;
+}
+
+.list dd{
+  overflow: hidden;
+}
+
+
+
+
