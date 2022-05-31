@@ -1,0 +1,120 @@
+*, html{ padding: 0; margin: 0; box-sizing: border-box; font-family: 나눔바른고딕; }
+html, body{ height: 100%; display: grid; place-items: center; text-align: center; }
+a{ text-decoration: none; color: inherit; }
+body{ background-color: pink; }
+p{ font-size: 14px; text-align: justify; color: black; }
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.card{
+    max-width: 350px;
+    height: 350px;
+    background-color: white;
+    margin: 0 20px;
+
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px rgb(98, 98, 98);
+}
+
+.img1{
+    background-image: url(../images/image01.png);
+}
+
+.img2{
+    background-image: url(../images/image02.png);
+}
+
+.img3{
+    background-image: url(../images/image03.png);
+}
+
+.card:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgb(98, 98, 98);
+}
+
+.card .img{ width: 100%; height: 280px; }
+
+.card .img .img1, .img2, .img3{ 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover;
+}
+
+.card .top-text{
+    padding: 5px;
+}
+
+.card .top-text .name{
+    font-size: 22px;  
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+}
+
+.card .top-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card .bottom-text{
+    padding: 5px;
+    opacity: 0; /* 안보이게 */
+    /* display: none;   안보이게 
+    font-size: 0;    안보이게  */
+
+    visibility: hidden;
+    transition: 0.1s;
+    background-color: whitesmoke;
+    padding: 0 20px 20px;
+    margin-top: 10px;
+}
+
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text{
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.card .bottom-text .btn{
+    text-align: right;
+}
+
+.card .bottom-text .btn a{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.card .bottom-text .btn a:hover{
+    transform: scale(0.8);
+    background-color: gray;
+}
+
+@media (max-width: 800px){ 
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 700px;
+        margin: 20px 0;
+    }
+    
+}
+
