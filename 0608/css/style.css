@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	}
+
+.bg-red {
+	background-color: var(--red);
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: gray;
+	text-align: center;
+	height: 100vh;
+}
+
+ul{
+	display: flex;
+}
+
+ul li{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	color: lightgray;
+	font-size: 30px;
+	border-radius: 50%;
+	margin: 0 10px;
+	line-height: 100px;
+	cursor: pointer;
+
+	transition: 0.5s;
+
+	position: relative;
+	display: block;
+}
+
+ul li:before{
+	content: '';
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	/* background-color:silver; */
+	position: absolute;
+	border-radius: 50%;
+
+	transform: scale(0.9);
+	z-index: -1;
+	
+	transition: 0.5s;
+}
+
+ul li:hover:before{
+	filter: blur(3px);
+	transform: scale(1.2);
+}
+
+ul li:nth-child(1):before{
+	background-color: blue;
+}
+
+ul li:nth-child(2):before{
+	background-color: rgb(96, 194, 227);
+}
+
+ul li:nth-child(3):before{
+	background-color: violet;
+}
+
+ul li:nth-child(4):before{
+	background-color: yellow;
+}
+
+ul li:nth-child(5):before{
+	background-color: red;
+}
+
+
+ul li:nth-child(1):hover:before{
+	background-color: blue;
+}
+
+ul li:nth-child(2):hover:before{
+	background-color: rgb(96, 194, 227);
+}
+
+ul li:nth-child(3):hover:before{
+	background-color: violet;
+}
+
+ul li:nth-child(4):hover:before{
+	background-color: yellow;
+}
+
+ul li:nth-child(5):hover:before{
+	background-color: red;
+}
+
+
+ul li:nth-child(1):hover:before{
+	box-shadow: 0 0 20px blue;
+}
+
+ul li:nth-child(2):hover:before{
+	box-shadow: 0 0 20px rgb(96, 194, 227);
+}
+
+ul li:nth-child(3):hover:before{
+	box-shadow: 0 0 20px violet;
+}
+
+ul li:nth-child(4):hover:before{
+	box-shadow: 0 0 20px yellow;
+}
+
+ul li:nth-child(5):hover:before{
+	box-shadow: 0 0 20px red;
+}
+
+
+ul li:nth-child(1):hover{
+	box-shadow: 0 0 20px blue;
+	text-shadow: 0 0 20px blue;
+	color: rgb(0, 0, 168);
+}
+
+ul li:nth-child(2):hover{
+	box-shadow: 0 0 20px rgb(96, 194, 227);
+	text-shadow: 0 0 20px rgb(96, 194, 227);
+	color: rgb(36, 154, 193);
+}
+
+ul li:nth-child(3):hover{
+	box-shadow: 0 0 20px violet;
+	text-shadow: 0 0 20px violet;
+	color: rgb(156, 86, 156);
+}
+
+ul li:nth-child(4):hover{
+	box-shadow: 0 0 20px yellow;
+	text-shadow: 0 0 20px yellow;
+	color: rgb(164, 164, 0);
+}
+
+ul li:nth-child(5):hover{
+	box-shadow: 0 0 20px red;
+	text-shadow: 0 0 20px red;
+	color: rgb(164, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
