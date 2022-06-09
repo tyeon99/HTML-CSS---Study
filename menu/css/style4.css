@@ -1,0 +1,54 @@
+*, html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body{
+    background-color: lightgray;
+}
+
+h2, p{
+    margin: 20px 0;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: gray;
+    min-width: 125px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    color: rgb(45, 45, 45);
+    background-color: rgb(167, 167, 167);
+}
+
+button:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}

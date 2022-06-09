@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+ul{
+	padding: 0; margin: 0;
+	background-color: black;
+	overflow: hidden;
+	top: 0;
+	position: sticky;	/* 메뉴 위치 고정 */
+	width: 100%;
+}
+
+ul li{
+	float: left;
+}
+
+a{
+	display: block;
+	color: white;
+	/* text-align: center; */
+	padding: 14px 16px;
+	/* margin: 20px; */
+}
+
+ul li:hover{
+	background-color: mediumpurple;
+}
+
+.active{
+	background-color: mediumorchid;
+}
+
+ul li:nth-child(5){
+	float: right;
+}
+
+.back{
+	padding: 20px;
+	/* margin-top: 30px; */
+
+	background-color: mediumslateblue;
+	height: 1500px;
+}
+
+@media (max-width: 800px){
+	ul li{
+		float: none;	/* clear: both; */
+	}
+	ul li:nth-child(5){
+		float: none;
+	}
+}
