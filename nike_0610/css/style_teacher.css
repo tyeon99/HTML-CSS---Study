@@ -1,0 +1,273 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	}
+
+	.wrap{
+width: 100vw;
+height: 100vh;
+background: linear-gradient(rgba(0,105,255,0.8), rgba(53, 137, 253, 0.8)), url(../images/background.jpg);
+background-position: center;
+background-size: cover;
+	}
+
+/* 왼쪽 상단작업 */	
+	.nav-bar{
+display: flex;
+height: 15%;
+/* background-color: black; */
+	}
+
+.navbar-inner img{
+		width: 15%;height: 15%;
+	}
+
+.navbar-left{
+flex-basis: 70%;
+	}
+
+
+.navbar-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-wrap: wrap; */
+	text-align: center;
+	padding: 40px 50px 10px 50px;
+}
+
+
+.navbar-inner ul{
+margin: 0px 0px 0px 10px;
+}
+
+
+.navbar-inner ul li{
+display: inline-block;
+margin: 0 20px;
+}
+
+
+.navbar-inner ul li a{
+color: #fff;
+font-size: 20px;
+}
+
+.navbar-inner ul li a:hover{
+	color: white;
+	font-size: 20px;
+	text-shadow: 0px 10px 20px rgba(255,0,191,0.5);
+	}
+
+/* 오른쪽 상단작업 */
+.navbar-right{
+		flex-basis: 30%;
+		background-color: #fff;
+	}
+
+	.navbar-right ul{
+margin: 0px 0px 0px 20px;
+line-height: 8;
+vertical-align: top;
+text-align: center;
+
+	}
+
+	.navbar-right ul li{
+display: inline-block;
+color:grey;
+padding: 0px 30px 0px 0px;
+
+	}
+
+	.navbar-right ul li a{
+		color:grey;
+		transition: 0.5s;
+	}
+
+	.navbar-right ul li a:hover{
+		color: black;
+		transform: scale(2);
+	}
+
+	.content{
+display: flex;
+height: 85%;
+	}
+
+	.content-left{
+flex-basis: 70%;
+position: relative;
+border-top: 2px dotted white;
+	}
+
+
+	.content-right{
+		flex-basis: 30%;	
+		position: relative;
+		background-color: white;
+		border-top: 2px dotted rgb(96, 96, 96);
+	}
+
+.upper-text{
+position: relative;
+top: 5%;
+left: 10%;
+opacity: 0.5;
+
+}
+
+
+.upper-text h1{
+	font-size: 150px;
+	font-style: italic;
+	margin-left: 150px;
+	line-height: 100px;
+}
+
+.upper-text h2{
+	font-size: 90px;
+}
+
+
+.bottom-text{
+position: absolute;
+left: 60%;
+bottom: 12%;
+color: lightblue;
+opacity: 0.5;
+}
+
+.bottom-text h1{
+	font-size: 100px;
+	margin-left: 150px;
+	line-height: 50px;
+}
+
+.bottom-text h2{
+	font-size: 80px;
+}
+
+.bottom-text h3{
+	font-size: 60px;
+	
+	margin-left: 200px;
+	line-height: 50px;
+}
+
+.content-left img{
+position: absolute;
+top: 10%;
+right: 10%;
+z-index: 2;
+}
+
+.content-right img{  
+	position: absolute;
+	top: 5%;
+	right: 15%;
+	z-index: 2;
+}
+
+.product-details{
+	bottom: 10%;
+	left: 10%;
+	position: absolute;
+	margin-bottom: 20px;
+}
+
+.price-box{
+display: flex;
+width: 170px;
+height: 170px;
+align-items: center;
+
+}
+
+
+.price{
+flex-basis: 70%;
+}
+
+.price h1{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.price h2{
+	margin-left: 20px;
+	color: #999;
+	font-size: 22px;
+}
+
+.price h3{
+	margin-left: 20px;
+	color: #ccc;
+}
+
+.varient{
+	flex-basis: 30%;
+	text-align: center;
+}
+
+
+.varient div{
+width: 15px;
+height: 15px;
+margin: 5px auto;
+
+}
+
+.varient div:nth-child(1){
+background-color: red;
+}
+
+.varient div:nth-child(2){
+	background-color: green
+}
+
+.varient div:nth-child(3){
+	background-color: blue;
+}
+
+.varient div:nth-child(4){
+background-color: pink;
+}
+
+.varient div:nth-child(5){
+	background-color: yellow;
+}
+
+.product-details p{
+	text-align: right;
+	color: orangered;
+	font-size: 20px;
+
+}
+
+.social-links{
+
+}
+
+.social-links ul{
+bottom: 250px;
+right: -100px;
+position: absolute;
+transform: rotate(-90deg);
+}
+
+
+.social-links ul li{
+display: inline-block;
+margin: 20px 20px;
+font-weight: 900;
+
+}
+
+.social-links ul li:a{
+color:red;
+}
+
+
+
+
