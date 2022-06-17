@@ -1,0 +1,106 @@
+/* 색 바꾸기 */
+/* :root{
+	--text-color: red;
+	--background-color: blue;
+	--accent-color: green;
+} */
+
+body{ padding: 0; margin: 0; }
+a{ text-decoration: none; }
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: lightpink;
+	/* background-color: var(--background-color); */
+}	
+
+.navbar_logo{
+	padding: 10px;
+	color: white;
+	font-size: 30px;
+}
+
+.navbar_logo i{
+	color: hotpink;
+}
+
+.navbar_logo a{
+	color: white;
+}
+
+.navbar_menu{
+	padding-left: 0;
+	display: flex;
+	font-size: 20px;
+}
+
+.navbar_menu li{
+	margin: 20px 30px;
+}
+
+.navbar_menu a{
+	color: white;
+}
+
+.navbar_menu a:hover{
+	color: magenta;
+	border-bottom: 2px solid magenta;
+}
+
+.navbar_icons{
+	padding: 10px;
+	display: flex;
+	font-size: 20px;
+}
+
+.navbar_icons li{
+	margin: 0;
+	padding: 10px;
+}
+
+.navbar_icons a{
+	color: whitesmoke;
+}
+
+.navbar_toggleBtn{
+	display: none;
+}	
+
+.navbar_toggleBtn i{
+	color: white;
+	font-size: 30px;
+	padding: 15px 10px;
+}
+
+@media(max-width: 768px){
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.navbar_menu{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;	/* 메뉴의 너비가 작아서 반응을 하지 않는다. */
+		display: none;
+	}
+
+	.navbar_icons{
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		display: none;
+	}
+	
+	.navbar_toggleBtn{
+		display: block;
+		position: absolute;
+		right: 20px;
+	}
+
+	.navbar_toggleBtn:{
+
+	}
+}
