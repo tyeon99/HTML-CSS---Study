@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+:root{
+	---bg-color: #333;
+	---title-color: #333;
+	---text-color: #333;
+	---btn-color: #333;
+}
+
+.container{
+	width: 90%;
+	/* height: 100vh; */
+	margin: 0 auto;
+	/* background-color: lightgray; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	margin: 100px auto;
+}
+
+.img{
+	width: 300px;
+	height: 400px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+.img1{
+	background-image: url(../img/1.png);
+}
+
+.img2{
+	background-image: url(../img/2.png);
+}
+
+.img3{
+	background-image: url(../img/3.png);
+}
+
+.img:after{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-size: cover;
+	position: absolute;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.img1::after{
+	background-image: url(../img/1.png);
+}
+
+.img2::after{
+	background-image: url(../img/2.png);
+}
+
+.img3::after{
+	background-image: url(../img/3.png);
+}
+
+.container > div:hover:after{
+	opacity: 0;
+}
+
+@media (max-width: 800px){
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+/* 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	}
+
+:root{
+	---bg-color: rgb(186, 11, 11);
+	---title-color: rgb(186, 11, 11);
+	---text-color: rgb(186, 11, 11);
+	---btn-color: rgb(186, 11, 11);
+}
+
+h1{
+	font-size: 30px;
+	text-align: center;
+	margin: 100px auto;
+}
+
+.imageContainer{
+
+	width: 90%;
+	/* height: 800px; */
+	/* background-color: aqua; */
+	/* margin: auto; */
+	/* background-color: #333; */
+/* 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.image{
+	width: 300px;
+	height: 400px;
+
+	background-color: black;
+	background-size: cover;
+
+	position: relative;
+	overflow: hidden; 
+}
+
+
+.image1{
+	background-image: url("/images/1.png");
+}
+
+.image2{
+	background-image: url("/images/2.png");
+}
+
+.image3{
+	background-image: url("/images/3.png");
+}
+
+.image:after{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-size: cover;
+	
+	content: '';
+	position: absolute;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.image1::after{
+	background-image: url("/images/1.png");
+}
+
+.image2::after{
+	background-image: url("/images/2.png");
+}
+
+.image3::after{
+	background-image: url("/images/3.png");
+}
+
+.imageContainer > div:hover:after{
+opacity: 0;
+}
+
+@media (max-width: 800px){
+
+	.imageContainer{
+display: flex;
+flex-direction: column;
+	}
+
+} */ 
