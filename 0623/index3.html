@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icon Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='css/style3.css' rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+    <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+    <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+    <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+    <button class="tablink" onclick="openCity('Seoul', this, 'orangered')">Seoul</button>
+
+
+    <div id="London" class="tabcontent">
+        <h1>London</h1>
+        <p>영국의 수도는 런던입니다.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h1>Paris</h1>
+        <p>프랑스의 수도는 파리입니다.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h1>Tokyo</h1>
+        <p>일본의 수도는 도쿄입니다.</p>
+    </div>
+
+    <div id="Oslo" class="tabcontent">
+        <h1>Oslo</h1>
+        <p>노르웨이 수도는 오슬로입니다.</p>
+    </div>
+
+    <div id="Seoul" class="tabcontent">
+        <h1>Seoul</h1>
+        <p>한국의 수도는 서울입니다.</p>
+    </div>
+
+    <script>
+        function openCity(cityName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
