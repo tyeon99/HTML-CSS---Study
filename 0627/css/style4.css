@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.sidenav{
+	width: 200px;
+    height: 100%;
+    /* background-color: lightgray; */
+    /* position: fixed;
+    top: 0;
+    left: -150px; */
+    transition: 0.5s;
+
+    overflow-x: hidden;
+}
+
+.sidenav a{
+    position: absolute;
+    left: -90px;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    padding: 16px 20px;
+    display: block;
+    font-size: 18px;
+    transition: 0.3s;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about{
+    background-color: green;
+    top: 20px;
+}
+
+.services{
+    background-color: blue;
+    top: 60px;
+}
+
+.clients{
+    background-color: red;
+    top: 120px;
+}
+
+.contact{
+    background-color: gray;
+    top: 180px;
+}
+
+.content{
+    padding: 10px 20px;
+    height: 1000px;
+    margin-left: 200px;
+}

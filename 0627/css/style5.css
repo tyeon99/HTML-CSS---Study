@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.topnav{
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a{
+    float: left;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.topnav a:hover{
+    background-color: rgb(179, 179, 179);
+    color: black;
+}
+
+.topnav a.active{
+    background-color: darkslateblue;
+}
+
+.topnav-center a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: none;
+}
+
+.topnav-right{
+    float: right;
+}
+
+@media (max-width: 768px){
+    .topnav a, .topnav-right{
+        float: none;
+        display: block;       
+    }
+    .topnav-center a{
+        position: relative;
+        top: 0; left: 0;
+        transform: none;
+    }
+}
