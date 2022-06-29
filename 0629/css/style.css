@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+.column{
+	width: 50%;
+	padding: 20px;
+	float: left;
+}
+
+.column.co1{
+	background-color: rgb(252, 127, 127);
+}
+
+.column.co2{
+	background-color: rgb(255, 255, 174);
+}
+
+.column.co3{
+	background-color: rgb(132, 201, 132);
+}
+
+.column.co4{
+	background-color: rgb(240, 155, 240);
+}
+
+.row::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.btn{
+	padding: 16px 20px;
+	border: none;
+	background-color: mediumpurple;
+	text-align: center;
+}
+
+.btn:hover{
+	background-color: mediumslateblue;
+}
+
+.btn.active{
+
+}
