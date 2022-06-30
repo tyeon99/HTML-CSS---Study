@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목을 넣으세요!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href='css/style.css' rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- <link href='css/color.css' rel="stylesheet">
+    <link href='css/reset.css' rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function(){
+            $("#s_banner_wrap").click(function(){
+                $("#modal").addClass("active");
+            });
+            $("#modal button").click(function(){
+                $("#modal").removeClass("active");
+            });
+        });
+    </script>
+
+    <div id="modal">
+        <div class="body">
+            <div class="img">
+                <img src="" alt="no" width="300px">
+            </div>
+
+            <div class="button">
+                <button type="button" id="btn-close">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="headarea">
+            <h1><a href="#"><img src="img/logo.png" alt=""></a></h1>
+            <div class="utill">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">MYPAGE</a></li>
+                </ul>
+            </div>
+            <div style="clear:both;"></div> <!-- 선 -->
+        </div> <!-- headarea -->
+
+        <div class="naviarea">
+            <div class="navi">
+                <ul>
+                    <li><a href="#">필기구</a></li>
+                    <li><a href="#">레더</a></li>
+                    <li><a href="#">위치</a></li>
+                    <li><a href="#">몽블랑 살펴보기</a></li>
+                </ul>
+                <div style="clear:both;"></div>
+
+                <div id="snavi">
+                    <ul>
+                        <li>
+                            <ul class="snavi">
+                                <li><a href="#">볼펜</a></li>
+                                <li><a href="#">만년필</a></li>
+                                <li><a href="#">수성펜</a></li>
+                                <li><a href="#">파인라이너</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="snavi">
+                                <li><a href="#">지갑</a></li>
+                                <li><a href="#">백팩</a></li>
+                                <li><a href="#">비지니스백</a></li>
+                                <li><a href="#">시티백</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="snavi"> 
+                                <li><a href="#">스마트워치</a></li>
+                                <li><a href="#">오토매틱</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="snavi">
+                                <li><a href="#">모두보기</a></li>
+                                <li><a href="#">일상업무로</a></li>
+                                <li><a href="#">비지니스</a></li>
+                                <li><a href="#">타임워커</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="clear:both;"></div>
+                </div>
+                <!--snavi-->
+
+            </div> <!-- navi -->
+        </div> <!-- naviarea -->
+    </header>
+
+
+    <div id="container">
+        <div id="s_banner_wrap">
+            <img src="img/img_main_visual02.jpg" alt="">
+        </div>
+
+        <div class="contents">
+            <ul>
+                <li>
+                    <img src="img/img_main_tit01.jpg" alt="">
+                    <dl>
+                        <dt>100여년동안의 장인정신</dt>
+                        <dd>필기류, 시계 및 악세서리</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/img_main_tit02.jpg" alt="">
+                    <dl>
+                        <dt>함께 만들어가요!</dt>
+                        <dd>시대를 초월하는 아름다움 <br />유행을 타지 않는 디자인의 몽블랑</dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="img/img_main_tit03.jpg" alt="">
+                    <table>
+                        <!-- <caption>공지사항</caption> -->
+                        <colgroup>
+                            <col style="width: 80%;">
+                            <col style="width: 20%;">
+                        </colgroup>
+                        <tr>
+                            <td><img src="img/ico_main_br02.jpg">&nbsp;111년간 필기 문화의 정체성</td>
+                            <td>17.01.23</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="img/ico_main_br02.jpg">&nbsp;신제품 ‘루즈 앤 느와’ 출시</td>
+                            <td>17.01.23</td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="img/ico_main_br02.jpg">&nbsp;독일의 명품 브랜드로 만년필</td>
+                            <td>17.01.23</td>
+                        </tr>
+                    </table>
+                    <a href="#" class="more">MORE</a>
+                </li>
+            </ul>
+            <div style="clear:both;"></div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li class="menu01">
+                    <span><img src="img/img_main_01.jpg" alt=""></span>
+                    <dl>
+                        <dt>몽블랑4810</dt>
+                        <dd>몽블랑 서밋은 우아한 스위스 워치메이킹 코드와 최첨단 기술이 집약되어 있는 최초의 스마트워치로 수상 경력을 자랑하는 1858 컬렉션 디자인을 갖추고 있습니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li class="menu02">
+                    <span><img src="img/img_main_02.jpg" alt=""></span>
+                    <dl>
+                        <dt>헤리티지루즈</dt>
+                        <dd>몽블랑 브랜드명이 새겨진 플래티넘 코팅 3링, 개별 일련 번호가 새겨진 플래티넘 코팅 클립이 시간을 초월한 럭셔리 볼펜의 아름다운 품격을 드러냅니다.</dd>
+                    </dl>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="menu03">
+                    <span><img src="img/img_main_03.jpg" alt=""></span>
+                    <dl>
+                        <dt>코팅 클래식 볼펜</dt>
+                        <dd>마이스터스튁 클래식 볼펜은 화이트 몽블랑엠블럼이 장식된 고급 블랙 레진 캡과 배럴로 대표되는 특별한 디자인 아이콘입니다.</dd>
+                    </dl>
+                </li>
+                <li class="menu04">
+                    <span><img src="img/img_main_04.jpg" alt=""></span>
+                    <dl>
+                        <dt>몽블랑뮤즈</dt>
+                        <dd>우아한 플래티넘 코팅 클립 오른쪽 측면 또는 클립 바로 위에 이름이나 이니셜을 새겨 특별함을 더할 수 있습니다.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div> <!-- container -->
+
+    <footer>
+        <div class="footer">
+            <Ul>
+                <li>몽블랑소개</li>
+                <li>문의처</li>
+                <li>고객서비스</li>
+                <li>개인정보처리방침</li>
+            </Ul>
+            <div style="clear:both;"></div>
+
+            <span>
+                사업자번호 : 0000-0000 ADD 서울시 강남구 역삼동 733 몽블랑 TEL 010-0000-0000
+                E-mail master@mantblanc.com COPYRIGHT 2017 © MONTBLANC. ALL RIGHTS RESERVED.
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
