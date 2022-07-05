@@ -1,0 +1,41 @@
+*, html{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+
+#title{
+position: relative;
+top: 30px;
+}
+
+#title h1{
+text-align: center;
+}
+
+.choice_list{
+margin: 50px 0px;
+}
+
+.choice_list h2{
+  text-align: center;
+  color: grey;
+  margin-bottom: 30px;
+
+}
+
+.food li{
+    padding: 5px 0 18px 5px;
+    vertical-align: bottom;
+}
+
+.location li{
+  padding: 5px 0 0px 5px;
+  margin: 0;
+  vertical-align: top;
+} 
+
+img{
+border-radius: 0 0 0 10px;
+
+}
+
