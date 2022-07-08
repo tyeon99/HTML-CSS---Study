@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 아이콘 메뉴</title>
+    <script src="https://kit.fontawesome.com/ec4b9d3f04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <div id="top">
+        <h2>Tabbed Image Gallery</h2>
+        <p>이미지를 클릭하면 크게 나온다.</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/sample1.jpg" alt="" style="width: 100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="img/sample2.jpg" alt="" style="width: 100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="img/sample3.jpg" alt="" style="width: 100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+            <img src="img/sample4.jpg" alt="" style="width: 100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">X</span>
+        <img id="expandingImg" style="width: 100%;" src="" alt="">
+        <div id="imgtext"></div>   
+    </div>
+
+    <script>
+        function myFunction(imgs){
+            var expandImg = document.getElementById("expandingImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

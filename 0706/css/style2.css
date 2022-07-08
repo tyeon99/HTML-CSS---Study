@@ -1,0 +1,52 @@
+*, html{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.column img:hover{
+    opacity: 1;
+}
+
+.row:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.container{
+    position: relative;
+    display: none;
+}
+
+#imgtext{   
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    left: 50px;
+    bottom: 50px;
+}
+
+.closebtn{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    top: 30px;
+    right: 40px;
+}

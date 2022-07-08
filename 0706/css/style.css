@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.roll{
+	width: 100%;
+
+	min-width: 220px;
+	max-width: 310px;
+	max-height: 220px;
+
+	background-color: black;
+	color: white;
+
+	text-align: center;
+
+	overflow: hidden;
+	position: relative;
+	margin: 10px;
+}
+
+.roll img{
+	width: 100%;
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+figcaption{
+	position: absolute;
+	bottom: 0; left: 0;
+	padding: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+figcaption:before{
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 100px;
+	right: auto;
+
+	content: '';
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	opacity: 0;
+	background-color: white;
+	transition: all 0.4s;
+	transition-delay: 0.6s;
+}
+
+figure.roll h2, figure.roll p{
+	margin: 0px 0px 5px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.roll h2{
+	font-weight: 300;
+	text-transform: uppercase;	/* 대문자 */
+	transform: translate3d(0%, 50%, 0);
+	transition-delay: 0.3s;
+
+}
+
+.roll h2 span{
+	font-weight: 800;
+}
+
+.roll p{
+	font-weight: 200;
+	transition-delay: 0s;
+}
+
+.roll a{
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	color: white;
+}
+
+.roll:hover img{	
+	opacity: 0.3;
+}
+
+.roll:hover figcaption h2{
+	opacity: 1;
+	transform: translate3d(0%, 0%, 0);
+	transition-delay: 0.2s;
+}
+
+.roll:hover figcaption p{
+	opacity: 0.8;
+	transition-delay: 0.6s;
+}
+
+.roll:hover figcaption:before{
+	top: 30px;
+	bottom: 30px;
+	opacity: 1;
+	background-color: black;;
+	transition-delay: 0s;
+}
