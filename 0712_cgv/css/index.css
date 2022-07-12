@@ -1,0 +1,100 @@
+*, html{ padding: 0; margin: 0; box-sizing: border-box; }
+
+a{ 
+    text-decoration: none; 
+}
+
+li{ 
+    list-style: none; 
+}
+
+button{ 
+    border: none; 
+    outline: none; 
+    background: none; 
+}
+
+.blind{
+    font-size: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.center{
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+/* ----------------------------초기화----------------------------- */
+
+#top-banner{
+    background-color: black;
+}
+
+#top-banner img{
+    display: block;
+}
+
+#top-banner button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 1.2em;
+}
+
+header{
+    background: url(../img/bg_header.gif) repeat-x;
+    height: 300px;
+}
+
+.snv{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+/* .nav01 */
+.snv .nav01{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -450px;
+}
+
+.snv .nav01 a{
+    color: black;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.snv .nav01 a span{
+    color: red;
+    font-weight: 900;
+}
+
+.snv .nav01 a img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+/* .nav02 */
+
+.snv .nav02 a{
+    font-weight: bold;
+    color: black;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.snv .nav02 a:nth-child(1){
+    border-right: 1px solid black;
+}
+
+.snv .nav02 a span{
+    color: red;
+    font-weight: 900;  
+}
