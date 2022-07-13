@@ -1,0 +1,292 @@
+*, html{ padding: 0; margin: 0; box-sizing: border-box; }
+
+a{ 
+    text-decoration: none; 
+}
+
+li{ 
+    list-style: none; 
+}
+
+button{ 
+    border: none; 
+    outline: none; 
+    background: none; 
+}
+
+.blind{
+    font-size: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.center{
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+/* ----------------------------초기화----------------------------- */
+
+#top-banner{
+    background-color: black;
+}
+
+#top-banner img{
+    display: block;
+}
+
+#top-banner button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 1.2em;
+}
+
+header{
+    background: url(../img/bg_header.gif) repeat-x;
+    height: 150px;
+}
+
+.snb{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+/* .nav01 */
+.snb .nav01{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -350px;
+}
+
+.snb .nav01 a{
+    color: black;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.snb .nav01 a:nth-child(4){
+    color: red;
+    font-weight: 900;
+}
+
+.snb .nav01 a img{
+    width: 15px;
+    vertical-align: middle;
+}
+
+/* .nav02 */
+
+.snb .nav02 a{
+    font-weight: bold;
+    color: black;
+    padding: 0 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.snb .nav02 a:nth-child(1){
+    border-right: 1px solid black;
+}
+
+.snb .nav02 a span{
+    color: red;
+    font-weight: 900;  
+}
+
+/* 드롭다운 메뉴구성 */
+
+.gnb{
+    position: relative;
+    height: 149px;
+}
+
+.gnb h1{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 136px;
+    height: 59px;
+}
+
+.gnb h2{
+    position: absolute;
+    width: 234px;
+    height: 32px;
+    top: 35px;
+    left: 380px;
+}
+
+.card{
+    position: absolute;
+    width: 133px;
+    height: 42px;
+    top: 53px;
+    left: 800px;
+}
+
+.dropdownwrap{
+    /* background-color: red; */
+    margin: 0px 0px 0px 270px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin: 80px 0px 0px 0px;
+}
+
+.dropbtn{
+    display: inline-block;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 30px;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: black;
+    /* color: white; */
+    min-width: 130px;
+    z-index: 999;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    color: rgb(214, 214, 214);
+}
+
+form{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 95px;
+    left: 760px;
+}
+
+form button{
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+}
+
+.main-ad{
+    background-image: url(../img/bg_c_bricks.png);
+    width: 100%;
+    height: 450px;
+}
+
+.line1{
+    position: absolute;
+    top: 750px;
+    left: 464px;
+    margin: 0 auto;
+    width: 980px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.line2{
+    position: absolute;
+    top: 755px;
+    left: 464px;
+    margin: 0 auto;
+    width: 980px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.movie-selection h2 img{
+    position: absolute;
+    top: 35px;
+    left: 280px;
+}
+
+.movie-selection li{
+    display: inline-block;
+}
+
+.movie-selection ul li iframe{
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    width: 730px;
+    height: 388px;
+}
+
+.movie-selection ul li img{
+    position: absolute;
+    top: 110px;
+    left: 740px;
+}
+
+.line3{
+    position: absolute;
+    top: 1250px;
+    left: 464px;
+    margin: 0 auto;
+    width: 980px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.line4{
+    position: absolute;
+    top: 1255px;
+    left: 464px;
+    margin: 0 auto;
+    width: 980px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.event-center1 h2 img{
+    position: absolute;
+    top: 1230px;
+    left: 870px;
+}
+
+.nav03{
+    position: absolute;
+    top: 1300px;
+    left: 690px;
+    width: 25%;
+    background-color: red;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.nav03 a{
+    color: white;
+    font-size: 16px;
+}
+
+.event-center1 ul{
+    position: absolute;
+    top: 1390px;
+    left: 465px;
+}
+
+.event-center1 li{
+    display: inline-block;
+}
