@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazimg navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- 버튼을 만들때는 일반 버튼, input(submit) -->
+    <div class="content">
+        <div class="tab">
+            <button class="tablink" onclick="openMovie(event, 'mov01')">탑건 매버릭</button>
+            <button class="tablink" onclick="openMovie(event, 'mov02')">한산</button>
+            <button class="tablink" onclick="openMovie(event, 'mov03')">범죄도시2</button>
+        </div>
+
+        <div id="mov01" class="tabcontent">
+            <h2>탑건 매버릭</h2>
+            <img src="img/82120_320.jpg" alt="">
+        </div>
+
+        <div id="mov02" class="tabcontent">
+            <h2>한산</h2>
+            <img src="img/83280_320.jpg" alt="">
+        </div>
+
+        <div id="mov03" class="tabcontent">
+            <h2>범죄도시2</h2>
+            <img src="img/85813_320.jpg" alt="">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

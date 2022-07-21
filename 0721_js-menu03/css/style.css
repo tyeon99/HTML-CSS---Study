@@ -1,0 +1,38 @@
+*, html{
+    margin: 0; padding: 0;
+}
+
+.content{
+    display: flex;
+}
+
+.tab{
+    background-color: darkgray;
+    overflow: hidden;
+    display: grid;
+}
+
+.tab button{
+    padding: 18px 20px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    font-size: 16px;
+    float: left;
+}
+
+.tab button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}   
+
+.tab button:active{
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.tabcontent{
+    display: none;
+}
