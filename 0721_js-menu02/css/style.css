@@ -1,0 +1,32 @@
+*, html{
+    margin: 0; padding: 0;
+}
+
+.accordian {
+    width: 100%;
+    padding: 0.5em;
+    background: rgb(134, 134, 134);
+    color: rgb(187, 187, 187);
+    border: none;
+    outline: none;
+    text-align: left;
+
+    font-size: 1em;
+    cursor: pointer;
+
+
+}
+
+.active,
+.accordian:hover {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.panel {
+    display: none;
+    padding: 1px 32px;
+    background: yellowgreen;
+
+}
