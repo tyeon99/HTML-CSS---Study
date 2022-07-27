@@ -1,0 +1,177 @@
+/* 초기화 */
+*, html{margin: 0;padding: 0;box-sizing: border-box;}
+ul, p {margin: 0;padding: 0;}
+li{list-style: none;}
+img{border:none; outline: none; vertical-align: top;
+max-width:100%; height: auto;}
+a{text-decoration: none; color:inherit;}
+
+/* Main CSS */
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Alata', sans-serif;
+}
+
+.header{
+    background: white;
+    color: black;
+}
+
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1700px;
+}
+
+.header-inner{
+    display: flex;
+}
+
+.header-logo{
+    width: 150px;
+    display: inline-block;
+    margin: 30px 0px;
+}
+
+.navbar{
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.dropdown button{
+    padding: 0 20px;
+    display: block;
+    line-height: 60px;
+    background-color: white;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown .dropbtn:hover{
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.dropdown-content{
+    background-color: #333;
+    color: white;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    min-width: 160px
+}
+
+.dropdown-content a{
+    padding: 0 20px;
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a:hover{
+    color:rgb(175, 175, 175);
+}
+
+@media (max-width: 768px){
+    .navbar, .header-inner{
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+/* ***************************************************** */
+
+.contents{
+    margin-bottom: 200px;
+}
+
+.main-img{
+    max-width: 1920px;
+    background-image: url(../img/main/Light_header.jpg);
+    height: 630px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -80px;
+}
+
+.main-img .img-logo{
+    /* max-width: 800px; */
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.wrapper ul{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px
+}
+
+.wrapper ul li h5{
+    font-size: 16px;
+    text-align: center;
+    white-space: pre-wrap;
+    letter-spacing: .29em;
+    margin: 50px 0;
+}
+
+@media (max-width: 768px){
+    .main-img{
+        padding: 50px;
+        height: auto;
+    }
+
+    .main-img .img-logo{
+        margin: 0;
+    }
+
+    .wrapper ul{
+        display: block;
+    }
+
+
+}
+
+/* ************************************************************** */
+
+.footer {
+    background: white;  
+    color: black;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+.footer, .wrapper{
+    text-align: center;
+}
+
+.footer .wrapper span.sns{
+    color: black;
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+.footer .wrapper span{
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
