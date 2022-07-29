@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec4b9d3f04.js" crossorigin="anonymous"></script>
+    <title>Responsive 'Contact US' WORK</title>
+    <link rel="stylesheet" href="css/team2.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Responsive 'Contact US' WORK</h1>
+        <p>반응형 연락페이지 작업입니다.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="title">
+            <h2>Welcome To THE RICHKICH MALL</h2>
+            <p>THE 리치키치는 온라인 쇼핑몰 창업 플랫폼 제작 회사입니다.</p>
+        </div>
+        <div class="row">
+            <!-- IMAGE LAYOUT -->
+            <div class="column">
+                <img class="left_img" src="img/team2.jpg" alt="">
+            </div>
+            <!-- Form LAYOUT -->
+            <div class="column">
+                <form action="/actioncontact_us.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="본인의 '성' 입력..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="본인의 '이름' 입력..">
+
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="skorea">South Korea</option>
+                        <option value="usa">USA</option>
+                        <option value="japan">JAPAN</option>
+                        <option value="china">CHINA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <!-- <textarea name="subject" id="subject" cols="30" rows="10"> -->
+                    <textarea name="subject" id="subject" placeholder="이곳에 메시지와 전화번호를 남겨주세요." style="height: 200px;"></textarea>
+
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </div>
+        </div>    <!-- class="row" -->
+
+        <footer>
+            <div class="wrapper">
+                <span class="sns">
+                    <i class="fab fa-facebook-f"></i>
+                </span>
+                <span class="sns">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span class="sns">
+                    <i class="fab fa-instagram"></i>
+                </span>
+                <span class="sns">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <br/><br/><br/><br/>
+        
+            <span><a href="#">PRIVACY POLICY</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">TERMS OF USE</a></span><br/>
+            <span><a href="#">YOUR CALIFORNIA PRIVACY RIGHTS</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">CHILDREN’S ONLINE PRIVACY POLICY</a></span><br/>
+            <span><a href="#">INTEREST-BASED ADS</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">DO NOT SELL MY PERSONAL INFORMATION</a></span><br/>
+            <br/>
+            <span>© 1986-2021 DISNEY / PIXAR</span>
+        </footer>
+    </div>    <!-- class="container" -->
+</body>
+</html>
