@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>베스킨라빈스 랜딩페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+
+        <div class="circle"></div>
+        <header>
+            <a href=""><img src="img/logo.png" alt=""></a>
+            <ul class="sidenav" id="mySidenav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+
+
+        <div class="content">
+            <div class="textBox">
+                <h2>
+                    <span>배스킨라빈스</span>는 미국의 아이스크림 프랜차이즈다.
+                </h2>
+                <p>
+                    배스킨라빈스®(Baskin Robbins®)는 1945년 캐나다계 미국인 사업가 어바인 라빈스(Irvine Robbins, 1917-2008)와 그의 처남인 버턴
+                    배스킨(Burton Baskin, 1913-1967)이 설립한 다국적 아이스크림 브랜드로, 로고에 적힌 이름인 31(Thirty-One)으로도 불린다. 31은 '한 달 내내 매일
+                    한 가지씩 먹을 수 있는, 31가지의 다양한 아이스크림을 갖추었다'는 의미를 담고 있다고 한다.
+                    대한민국에는 1985년 진출하였으며, 던킨도너츠와 함께 비알코리아에서 운영하고 있다. 31일이 들어가는 달의 31일에 주문 시 무료로 "1 사이즈 업" 이벤트를 한다.
+                    대한민국에서는 '배라'라는 줄임말로도 불린다.
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/ice1.png" alt="" class="starbucks">
+            </div>
+        </div> <!-- class="content" -->
+
+        <ul class="thumb">
+            <li><img src="img/sice1.png" onclick="imgSlider('img/ice1.png'); changeCircleColor('#82624d');" alt=""></li>
+            <li><img src="img/sice2.png" onclick="imgSlider('img/ice2.png'); changeCircleColor('#d9626a');" alt=""></li>
+            <li><img src="img/sice3.png" onclick="imgSlider('img/ice3.png'); changeCircleColor('#8ebf57');" alt=""></li>
+        </ul>
+
+        <ul class="sns">
+            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <script>
+        function openNav() {
+            var x = document.getElementById("mySidenav");
+            if (x.className === "sidenav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "sidenav";
+            }
+        }
+
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
