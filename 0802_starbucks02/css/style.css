@@ -1,0 +1,172 @@
+*, html{ padding: 0; margin: 0; box-sizing: border-box; }
+a{ text-decoration: none; color: inherit; }
+ul{ list-style: none; }
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: green;
+    clip-path: circle(600px at right 800px);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li.active{
+    background-color: rgb(0, 177, 0);
+    color: white;
+}
+
+header ul li a{
+    display: block;
+    padding: 18px 30px;
+}
+
+a.icon{
+    display: none;
+}
+
+#mySidenav{
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;   
+}
+
+.content .textBox h2{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.content .textBox h2 span{
+    color: green;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.content .textBox p{
+    margin-top: 20px;
+    color: #333;
+    text-align: justify;
+}   
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 18px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+.content .imgBox{
+    position: relative;
+    max-width: 400px;
+}
+
+ul.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+ul.thumb li{
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+ul.thumb li:hover{
+    transform: translateY(-20px);
+}
+
+ul.sns{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul.sns li a{
+    display: block;
+    padding: 10px 0;
+    transform: scale(0.7);
+    filter: invert(1)
+}
+
+ul.sns li a:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px){
+    a.icon{
+        display: block;
+        font-size: 24px;
+    }
+    .sidenav{
+        display: none;
+    }
+    .sidenav.responsive{
+        position: relative;
+    }
+    .sidenav.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .sidenav.responsive li a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
